@@ -3,17 +3,18 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>week-6-ajax</title>
+	<title>car-ajax</title>
 
 	<!-- Bootstrap File -->
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-	  crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Courgette|Economica|Marck+Script|Pacifico" rel="stylesheet">	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
 	<style type="text/css">
 		button,
 		div,
 		form,
 		input {
-			margin: 10px;
+			margin: 15px;
 		}
 	</style>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -21,19 +22,31 @@
 
 <body>
 
-	<div id="buttonsView"></div>
+	<div id="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div id="buttonsView">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<form id="car-form">
+						<h3 id="searchTitle">Add your favorite car</h3>
+						<label for="car-input"></label>
+						<input type="text" id="car-input">
+						<br>
 
-	<form id="car-form">
-		<h3 id="searchTitle">Add a Car!</h3>
-		<label for="car-input"></label>
-		<input type="text" id="car-input">
-		<br>
+						<input type="button" class="btn btn-danger" id="addcar" type="submit" value="Add car">
+					</form>
+				</div>
+			</div>
+			<div id="mainWoinow">
+				<div id="carsView"></div>
 
-		<input type="button" class="btn btn-danger" id="addcar" type="submit" value="Add car">
-	</form>
+			</div>
+		</div>
 
-
-	<div id="carsView"></div>
+	</div>
 
 	<script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
 	<script type="text/javascript" src="assets/javascript/app.js"></script>

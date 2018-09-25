@@ -1,8 +1,12 @@
-* {
+/* * {
 	box-sizing: border-box;
-}
+} */
 
-body 
+
+ body {
+	 background-image: url(drag-race-wallpapers-31037-747760.jpg);
+
+} 
 
 
 
@@ -11,7 +15,7 @@ body
 	background-size: 70%;
 	max-width: 700px;
 }
- 
+
 #car-form {
 	float: right;
 }
@@ -27,8 +31,54 @@ input {
 }
 
 #carsView {
-	float: left;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	line-height: 10px;
+	
+
+
 
 }
 
+img {
+	border: 1px solid rgb(5, 14, 9);
+    width : 250px;
+    height: 300px;
+    margin: 15px;
 
+}
+
+/* #mainWoinow{
+	border: 1px solid rgb(238, 232, 232);
+	/* background-color: black; */
+
+
+/* } */ */
+
+.card-title {
+	height: 250px;
+	width: 250px;
+}
+
+.carImage{
+	height: 250px;
+	height: 300px;
+	 
+}
+
+P{
+color: rgb(54, 218, 22)
+}
+#searchTitle{
+	color: rgb(54, 218, 22);
+	text-decoration: underline;
+	font-family: 'Courgette', cursive;
+	font-size: 125%
+
+	
+}
+
+#addcar{
+	margin-left: 70px;
+}

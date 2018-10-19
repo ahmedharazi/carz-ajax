@@ -1,4 +1,3 @@
-$(document).ready(function(){
 
 
 var cars = ['BMW', 'MAZDA', 'Dodge'];
@@ -110,4 +109,3 @@ $(document).on('click', '.car', displaycarInfo);
 
 renderButtons();
 
-});
